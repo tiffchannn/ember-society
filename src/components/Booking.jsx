@@ -5,9 +5,10 @@ import WaiverModal from './WaiverModal'
 import { CONTACT_EMAIL } from '../config'
 
 const eventTypes = [
-  'Private group event',
-  'Vendor / pop-up event',
+  'Private event at my location',
+  'Vendor or brand partnership',
   'Corporate or team offsite',
+  'Tickets for an upcoming event',
   'Not sure yet',
 ]
 

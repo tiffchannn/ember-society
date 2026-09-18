@@ -7,7 +7,7 @@ export default function Manifesto() {
       <EmberField count={16} className="opacity-70" />
       <div className="relative mx-auto max-w-3xl px-6 text-center">
         <Reveal>
-          <p className="eyebrow text-gold">What Ember Means</p>
+          <p className="eyebrow text-gold">What We Believe</p>
         </Reveal>
 
         <Reveal delay={120}>

@@ -2,32 +2,32 @@ import Reveal from './Reveal'
 
 const offerings = [
   {
-    title: 'Private Group Events',
+    title: 'Ticketed Events',
+    price: '$60',
+    unit: 'per ticket',
+    body: 'Open classes we host alongside brand activations, vendors and markets. Guests buy a ticket, claim a Micro, and stay for whatever the partners have set up around it.',
+    includes: [
+      'Single ticket, no membership',
+      'Vendors and brand partners on site',
+      'Built for first-timers',
+      'Waiver signed at checkout',
+    ],
+    cta: 'Ask About Upcoming Events',
+    featured: false,
+  },
+  {
+    title: 'Private Events',
     price: 'Custom',
     unit: 'quoted per event',
-    body: 'Birthdays, bachelorettes, team offsites, client appreciation, backyard classes — we bring the Micros to your space and build the class around your group.',
+    body: 'You choose the place — your home, an office, a rooftop, a venue you have already booked — and we arrive with the Micros and run the class for your group.',
     includes: [
       'Priced by headcount and duration',
+      'We set up at your location',
       'Machines, instruction and playlist included',
-      'Indoor or outdoor, your location',
       'All levels coached in the same room',
     ],
     cta: 'Request a Quote',
     featured: true,
-  },
-  {
-    title: 'Vendor & Pop-Up Events',
-    price: '$60',
-    unit: 'per participant',
-    body: 'Markets, storefronts, wellness fairs and brand activations. Guests book a spot on a Micro and get a full Lagree class in the middle of the event.',
-    includes: [
-      'Flat per-person rate',
-      'Great fit for markets and activations',
-      'Beginner-friendly format',
-      'Liability waiver collected at booking',
-    ],
-    cta: 'Book a Spot',
-    featured: false,
   },
 ]
 
@@ -38,7 +38,7 @@ export default function Pricing() {
         <Reveal className="max-w-2xl">
           <p className="eyebrow text-ember">Events &amp; Pricing</p>
           <h2 className="display mt-6 text-4xl leading-tight sm:text-5xl">
-            Gather your people. We&apos;ll bring the fire.
+            Find us at an event — or bring us to yours
           </h2>
         </Reveal>
 
@@ -47,9 +47,7 @@ export default function Pricing() {
             <Reveal key={item.title} delay={i * 130}>
               <div
                 className={`flex h-full flex-col rounded-2xl p-9 sm:p-11 ${
-                  item.featured
-                    ? 'bg-ink text-cream'
-                    : 'border border-ink/12 bg-cream text-ink'
+                  item.featured ? 'bg-ink text-cream' : 'border border-ink/12 bg-cream text-ink'
                 }`}
               >
                 <h3 className="display text-2xl">{item.title}</h3>
@@ -58,9 +56,7 @@ export default function Pricing() {
                   <span className={`display text-5xl ${item.featured ? 'text-gold' : 'text-ember'}`}>
                     {item.price}
                   </span>
-                  <span
-                    className={`eyebrow ${item.featured ? 'text-cream/50' : 'text-ink/45'}`}
-                  >
+                  <span className={`eyebrow ${item.featured ? 'text-cream/50' : 'text-ink/45'}`}>
                     {item.unit}
                   </span>
                 </div>

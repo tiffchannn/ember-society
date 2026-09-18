@@ -9,7 +9,8 @@ export default function Footer() {
           <div>
             <Logo tone="cream" />
             <p className="mt-6 max-w-xs text-sm leading-relaxed text-cream/55">
-              A travelling Lagree experience. Private events, pop-ups and vendor activations —
+              A travelling movement &amp; wellness experience. Ticketed pop-ups, brand
+              activations and private events —
               {' '}{SERVICE_AREA}.
             </p>
           </div>

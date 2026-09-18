@@ -35,8 +35,9 @@ export default function Experience() {
                 A class that meets you where you are
               </h2>
               <p className="mt-7 max-w-md text-base leading-relaxed text-ink/70">
-                Ember Society is a travelling Lagree experience. We bring the machines, the
-                playlist and the coaching — you bring the people and the place.
+                Ember Society is a travelling movement and wellness experience. We bring the
+                equipment, the playlist and the coaching — you bring the people and the place.
+                Lagree is where we start; breathwork, mat Pilates and more are on the way.
               </p>
             </Reveal>
           </div>
