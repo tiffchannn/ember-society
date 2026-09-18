@@ -25,6 +25,10 @@ export default function Manifesto() {
             capable of, and that strength carries far beyond the workout.
           </p>
         </Reveal>
+
+        <Reveal delay={360}>
+          <p className="display mt-14 text-3xl text-gold sm:text-4xl">Find your spark.</p>
+        </Reveal>
       </div>
     </section>
   )

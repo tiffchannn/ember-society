@@ -1,10 +1,11 @@
 const words = [
+  'Movement',
+  'Connection',
+  'Experiences',
   'Lagree Micro',
   'Private Groups',
   'Pop-Ups',
   'Vendor Events',
-  'Community',
-  'Strength',
   'Resilience',
 ]
 
