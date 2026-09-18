@@ -46,7 +46,7 @@ export default function Instructors() {
                   <span className="display text-[7rem] text-ember/40 sm:text-[9rem]">
                     {person.initial}
                   </span>
-                  <EmberMark className="absolute bottom-6 right-6 h-12 w-auto text-ember/45" />
+                  <EmberMark className="absolute bottom-6 right-6 h-16 text-ember/40" />
                 </div>
 
                 <h3 className="display mt-8 text-2xl">{person.name}</h3>
