@@ -18,7 +18,7 @@ export default function Hero() {
 
       <div className="relative mx-auto max-w-4xl px-6 text-center">
         <p className="eyebrow reveal reveal-in text-[0.6rem] tracking-[0.25em] text-gold sm:text-[0.6875rem] sm:tracking-[0.32em]">
-          Lagree · Ticketed Pop-Ups · Private Events
+          Community · Experiences · Connection
         </p>
 
         <h1 className="display reveal reveal-in mt-7 text-[13vw] leading-[0.95] sm:text-6xl md:text-7xl lg:text-8xl" style={{ animationDelay: '120ms' }}>
