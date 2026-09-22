@@ -1,7 +1,7 @@
 import Nav from './components/Nav'
 import Hero from './components/Hero'
 import Marquee from './components/Marquee'
-import Manifesto from './components/Manifesto'
+import Story from './components/Story'
 import Experience from './components/Experience'
 import Micro from './components/Micro'
 import Instructors from './components/Instructors'
@@ -17,7 +17,7 @@ export default function App() {
       <main>
         <Hero />
         <Marquee />
-        <Manifesto />
+        <Story />
         <Experience />
         <Micro />
         <Instructors />

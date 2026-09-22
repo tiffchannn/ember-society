@@ -30,7 +30,7 @@ export default function Experience() {
         <div className="grid gap-14 md:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] md:gap-20">
           <div className="md:sticky md:top-32 md:self-start">
             <Reveal>
-              <p className="eyebrow text-gold">The Experience</p>
+              <p className="eyebrow text-ember">The Experience</p>
               <h2 className="display mt-6 text-4xl leading-tight sm:text-5xl">
                 A class that meets you where you are
               </h2>
@@ -45,7 +45,7 @@ export default function Experience() {
           <div className="grid gap-px overflow-hidden rounded-2xl bg-ink/10 sm:grid-cols-2">
             {pillars.map((pillar, i) => (
               <Reveal key={pillar.n} delay={i * 90} className="bg-cream p-8 sm:p-9">
-                <span className="display text-sm text-gold">{pillar.n}</span>
+                <span className="display text-sm text-ember">{pillar.n}</span>
                 <h3 className="display mt-5 text-xl leading-snug">{pillar.title}</h3>
                 <p className="mt-4 text-sm leading-relaxed text-ink/65">{pillar.body}</p>
               </Reveal>

@@ -30,8 +30,8 @@ Manual alternative: `npm run deploy` (publishes `dist` to a `gh-pages` branch).
 - **`src/config.js`** — contact email, Instagram handle and service area are placeholders.
 - **Instructor portraits** — `src/components/Instructors.jsx` renders a monogram tile per bio.
   Replace each with `<img className="aspect-[4/5] w-full rounded-2xl object-cover" src="..." />`.
-- **Micro photo** — `src/components/Micro.jsx` uses a line drawing. Drop a real photo in `public/`
-  and swap the `<MicroIllustration />` call for an `<img>`.
+- **Micro photo** — `src/assets/micro.jpg` was cropped from the brand kit and is only 764px wide.
+  Replace it with the original, higher-resolution file for sharper display on retina screens.
 - **Liability waiver** — the copy in `src/components/WaiverModal.jsx` is placeholder language and
   needs review by a lawyer before taking real bookings.
 - **Booking form** — currently opens a prefilled email draft (works on static hosting with no
@@ -47,5 +47,7 @@ src/
   index.css      brand tokens (colors, fonts) + animations
 ```
 
-Brand tokens live in `src/index.css` under `@theme`: gold `#D1AC65`, cream `#F6F6E9`,
-ink `#40323D`, plus darker shades for the night sections. Headings use Cinzel, body uses Inter.
+Brand tokens live in `src/index.css` under `@theme`: amber `#E19F3F`, copper `#A16139`,
+charcoal `#34302F`, cream `#F6F6E9` and clay `#CEC0B2`, plus warm near-blacks for the night
+sections. These are the swatches as drawn in the brand kit — its hex labels don't match the
+circles. Headings use Cinzel, body uses Inter.

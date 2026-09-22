@@ -1,77 +1,11 @@
 import Reveal from './Reveal'
+import microPhoto from '../assets/micro.jpg'
 
 const specs = [
   { value: '71"', label: 'Length' },
   { value: '18.5"', label: 'Width' },
   { value: '53 lb', label: 'Weight' },
 ]
-
-// Spec-drawing stand-in. Swap for <img src="/micro.jpg" /> once a product photo lands in /public.
-function MicroIllustration() {
-  return (
-    <svg
-      viewBox="0 0 560 340"
-      className="h-full w-full"
-      role="img"
-      aria-label="Side-profile diagram of the Lagree Micro machine"
-    >
-      <rect width="560" height="340" fill="#241a22" />
-
-      <g fill="#a8552a" opacity="0.5">
-        <circle cx="96" cy="64" r="2.4" />
-        <circle cx="430" cy="52" r="1.9" />
-        <circle cx="318" cy="88" r="1.5" />
-        <circle cx="180" cy="44" r="1.7" />
-        <circle cx="500" cy="110" r="1.4" />
-      </g>
-
-      <g stroke="#d1ac65" fill="none" strokeLinecap="round" strokeLinejoin="round">
-        {/* handlebars */}
-        <g opacity="0.8" strokeWidth="2">
-          <path d="M86 150h46M109 150v42" />
-          <path d="M428 150h46M451 150v42" />
-        </g>
-        {/* front and back platforms */}
-        <rect x="70" y="192" width="112" height="26" rx="4" strokeWidth="2" opacity="0.85" />
-        <rect x="378" y="192" width="112" height="26" rx="4" strokeWidth="2" opacity="0.85" />
-        {/* sliding carriage */}
-        <rect x="204" y="186" width="152" height="32" rx="5" strokeWidth="2.6" />
-        <path d="M228 202h104" strokeWidth="1.2" opacity="0.4" />
-        {/* rail + feet */}
-        <path d="M60 228h440" strokeWidth="2.6" />
-        <path d="M78 228v26M482 228v26M78 254h40M442 254h40" strokeWidth="2.2" opacity="0.8" />
-        {/* springs */}
-        <path
-          d="M356 210l10-6 10 6 10-6 10 6"
-          strokeWidth="1.6"
-          opacity="0.6"
-        />
-        <path d="M182 210l-10-6-10 6-10-6-10 6" strokeWidth="1.6" opacity="0.6" />
-        {/* travel arrows on the carriage */}
-        <g opacity="0.55" strokeWidth="1.4">
-          <path d="M252 168h56M252 168l7-5M252 168l7 5M308 168l-7-5M308 168l-7 5" />
-        </g>
-      </g>
-
-      {/* dimension line */}
-      <g stroke="#f6f6e9" opacity="0.35" strokeWidth="1">
-        <path d="M60 288h440M60 282v12M500 282v12" />
-      </g>
-      <text
-        x="280"
-        y="312"
-        textAnchor="middle"
-        fill="#f6f6e9"
-        fillOpacity="0.45"
-        fontSize="11"
-        letterSpacing="3"
-        fontFamily="Inter, sans-serif"
-      >
-        71 IN
-      </text>
-    </svg>
-  )
-}
 
 export default function Micro() {
   return (
@@ -105,8 +39,22 @@ export default function Micro() {
           </Reveal>
 
           <Reveal delay={140}>
-            <div className="overflow-hidden rounded-2xl border border-cream/10 bg-char">
-              <MicroIllustration />
+            {/* bg matches the photo's studio backdrop so the edges disappear */}
+            <div className="flex aspect-[4/3] items-center justify-center overflow-hidden rounded-2xl bg-[#f0f0f0] px-6">
+              <img
+                src={microPhoto}
+                alt="The Lagree Micro machine, side view"
+                className="w-full"
+                loading="lazy"
+                style={{
+                  maskImage:
+                    'linear-gradient(to right, transparent, #000 8%, #000 92%, transparent), linear-gradient(to bottom, transparent, #000 12%, #000 88%, transparent)',
+                  maskComposite: 'intersect',
+                  WebkitMaskImage:
+                    'linear-gradient(to right, transparent, #000 8%, #000 92%, transparent), linear-gradient(to bottom, transparent, #000 12%, #000 88%, transparent)',
+                  WebkitMaskComposite: 'source-in',
+                }}
+              />
             </div>
           </Reveal>
         </div>

@@ -1,19 +1,19 @@
 import EmberField from './EmberField'
+import embersPhoto from '../assets/embers.jpg'
 
 export default function Hero() {
   return (
     <section
       id="top"
-      className="relative flex min-h-[100svh] items-center justify-center overflow-hidden bg-soot text-cream"
+      className="relative flex min-h-[100svh] items-center justify-center overflow-hidden bg-soot pb-24 pt-36 text-cream"
     >
-      <div
-        className="absolute inset-0"
-        style={{
-          background:
-            'radial-gradient(120% 90% at 50% 105%, #7a3a18 0%, #3a1f1c 34%, #1b1218 62%, #120c11 100%)',
-        }}
+      <img
+        src={embersPhoto}
+        alt=""
+        className="absolute inset-0 h-full w-full object-cover"
       />
-      <EmberField count={34} />
+      <div className="absolute inset-0 bg-soot/35" />
+      <EmberField count={22} />
       <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-soot to-transparent" />
 
       <div className="relative mx-auto max-w-4xl px-6 text-center">
@@ -26,7 +26,7 @@ export default function Hero() {
         </h1>
 
         <p
-          className="reveal reveal-in mt-6 text-sm font-extralight tracking-[0.42em] text-cream/70 uppercase"
+          className="reveal reveal-in mt-6 text-base font-extralight italic tracking-[0.3em] text-cream/75 sm:text-lg"
           style={{ animationDelay: '240ms' }}
         >
           movement &amp; wellness
@@ -60,7 +60,7 @@ export default function Hero() {
       </div>
 
       <a
-        href="#manifesto"
+        href="#story"
         aria-label="Scroll to next section"
         className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-3 text-cream/40 transition-colors hover:text-gold md:flex"
       >

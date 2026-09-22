@@ -31,7 +31,7 @@ export default function Instructors() {
     <section id="instructors" className="bg-cream py-28 md:py-36">
       <div className="mx-auto max-w-6xl px-6">
         <Reveal className="max-w-2xl">
-          <p className="eyebrow text-gold">Meet Your Instructors</p>
+          <p className="eyebrow text-ember">Meet Your Instructors</p>
           <h2 className="display mt-6 text-4xl leading-tight sm:text-5xl">
             Two instructors, one spark
           </h2>

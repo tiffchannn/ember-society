@@ -31,7 +31,7 @@ export default function Prep() {
     <section id="prep" className="bg-cream py-28 md:py-36">
       <div className="mx-auto max-w-6xl px-6">
         <Reveal className="max-w-2xl">
-          <p className="eyebrow text-gold">Before You Come</p>
+          <p className="eyebrow text-ember">Before You Come</p>
           <h2 className="display mt-6 text-4xl leading-tight sm:text-5xl">
             Class prep &amp; what to expect
           </h2>
@@ -60,7 +60,7 @@ export default function Prep() {
               {expect.map(([term, def], i) => (
                 <Reveal key={term} delay={i * 80}>
                   <dt className="display flex items-baseline gap-4 text-lg">
-                    <span className="text-sm text-gold">0{i + 1}</span>
+                    <span className="text-sm text-ember">0{i + 1}</span>
                     {term}
                   </dt>
                   <dd className="mt-3 pl-9 text-sm leading-relaxed text-ink/65">{def}</dd>
