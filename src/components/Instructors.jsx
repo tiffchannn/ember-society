@@ -1,6 +1,7 @@
 import Reveal from './Reveal'
 import { EmberMark } from './Logo'
 import estefanyPhoto from '../assets/estefany.jpg'
+import tiffanyPhoto from '../assets/tiffany.jpg'
 
 const instructors = [
   {
@@ -18,6 +19,7 @@ const instructors = [
   {
     name: 'Tiffany',
     initial: 'T',
+    photo: tiffanyPhoto,
     role: 'Co-Founder · Lagree Instructor',
     quote: 'The second in a hold when it feels like you can’t stay there — and then you do.',
     paragraphs: [
