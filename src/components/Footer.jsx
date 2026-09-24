@@ -15,7 +15,7 @@ export default function Footer() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-12 sm:gap-20">
+          <div className="grid min-w-0 grid-cols-2 gap-8 sm:gap-20">
             <div>
               <p className="eyebrow text-cream/40">Explore</p>
               <ul className="mt-5 space-y-3 text-sm text-cream/70">
@@ -42,12 +42,14 @@ export default function Footer() {
               </ul>
             </div>
 
-            <div>
+            <div className="min-w-0">
               <p className="eyebrow text-cream/40">Connect</p>
-              <ul className="mt-5 space-y-3 text-sm text-cream/70">
+              <ul className="mt-5 space-y-3 text-sm text-cream/70 [overflow-wrap:anywhere]">
                 <li>
                   <a href={`mailto:${CONTACT_EMAIL}`} className="hover:text-gold">
-                    {CONTACT_EMAIL}
+                    {/* prefer wrapping at the @ rather than mid-word */}
+                    {CONTACT_EMAIL.split('@')[0]}
+                    <wbr />@{CONTACT_EMAIL.split('@')[1]}
                   </a>
                 </li>
                 <li>
