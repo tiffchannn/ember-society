@@ -17,11 +17,11 @@ Runs at http://localhost:5173.
 2. In the repo: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
 3. Every push to `main` builds and publishes automatically via `.github/workflows/deploy.yml`.
 
-The site will be live at `https://<username>.github.io/ember-society/`.
+The site is live at https://embersociety.la (DNS at GoDaddy, four A records on the apex pointing
+at GitHub's IPs, plus a `www` CNAME to `tiffchannn.github.io`).
 
-`vite.config.js` sets the base path to `/ember-society/` only when `GITHUB_PAGES=true`, which the
-workflow sets. If the repo is renamed, update that path to match. For a custom domain, set the base
-back to `/` and add a `CNAME` file to `public/`.
+`public/CNAME` holds the domain and `vite.config.js` serves from `/`. If the custom domain were
+ever dropped, the base would need to go back to `/ember-society/` to work on `github.io`.
 
 Manual alternative: `npm run deploy` (publishes `dist` to a `gh-pages` branch).
 

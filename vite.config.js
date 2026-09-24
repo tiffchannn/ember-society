@@ -2,8 +2,8 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
-// base must match the GitHub Pages repo name (https://<user>.github.io/ember-society/)
+// Served from the root of embersociety.la
 export default defineConfig({
-  base: process.env.GITHUB_PAGES === 'true' ? '/ember-society/' : '/',
+  base: '/',
   plugins: [react(), tailwindcss()],
 })
