@@ -9,9 +9,8 @@ export default function Footer() {
           <div>
             <Logo tone="cream" />
             <p className="mt-6 max-w-xs text-sm leading-relaxed text-cream/55">
-              A travelling movement &amp; wellness experience. Ticketed pop-ups, brand
-              activations and private events —
-              {' '}{SERVICE_AREA}.
+              A movement &amp; wellness experience. Community, fitness, pop-ups and private
+              events. {SERVICE_AREA}.
             </p>
           </div>
 
