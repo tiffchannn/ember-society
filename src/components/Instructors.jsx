@@ -1,10 +1,12 @@
 import Reveal from './Reveal'
 import { EmberMark } from './Logo'
+import estefanyPhoto from '../assets/estefany.jpg'
 
 const instructors = [
   {
     name: 'Estefany',
     initial: 'E',
+    photo: estefanyPhoto,
     role: 'Co-Founder · Lagree Instructor',
     quote: 'Challenge is where we discover what we are truly capable of.',
     paragraphs: [
@@ -41,12 +43,22 @@ export default function Instructors() {
           {instructors.map((person, i) => (
             <Reveal key={person.name} delay={i * 140}>
               <article className="flex h-full flex-col">
-                {/* Replace this panel with a portrait: <img className="aspect-[4/5] w-full rounded-2xl object-cover" ... /> */}
                 <div className="relative flex aspect-[4/5] items-center justify-center overflow-hidden rounded-2xl bg-clay/45">
-                  <span className="display text-[7rem] text-ember/40 sm:text-[9rem]">
-                    {person.initial}
-                  </span>
-                  <EmberMark className="absolute bottom-6 right-6 h-16 text-ember/40" />
+                  {person.photo ? (
+                    <img
+                      src={person.photo}
+                      alt={person.name}
+                      className="h-full w-full object-cover"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <>
+                      <span className="display text-[7rem] text-ember/40 sm:text-[9rem]">
+                        {person.initial}
+                      </span>
+                      <EmberMark className="absolute bottom-6 right-6 h-16 text-ember/40" />
+                    </>
+                  )}
                 </div>
 
                 <h3 className="display mt-8 text-2xl">{person.name}</h3>
