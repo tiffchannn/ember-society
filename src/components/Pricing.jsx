@@ -3,8 +3,8 @@ import Reveal from './Reveal'
 const offerings = [
   {
     title: 'Ticketed Events',
-    price: '$60',
-    unit: 'per ticket',
+    price: 'Varies',
+    unit: 'announced with each date',
     body: 'Open classes we host alongside brand activations, vendors and markets. Guests buy a ticket, claim a Micro, and stay for whatever the partners have set up around it.',
     includes: [
       'Single ticket, no membership',
@@ -21,7 +21,7 @@ const offerings = [
     unit: 'quoted per event',
     body: 'You choose the place — your home, an office, a rooftop, a venue you have already booked — and we arrive with the Micros and run the class for your group.',
     includes: [
-      'Priced by headcount and duration',
+      'Quoted by headcount, duration and travel',
       'We set up at your location',
       'Machines, instruction and playlist included',
       'All levels coached in the same room',
@@ -101,8 +101,9 @@ export default function Pricing() {
 
         <Reveal delay={200}>
           <p className="mt-10 text-center text-sm text-ink/55">
-            Travel outside our standard radius, extended durations and add-ons are quoted
-            individually — just ask.
+            Based in the San Gabriel Valley and travelling throughout LA County — Orange County
+            and the Inland Empire on request. Group size, duration and travel all factor into a
+            quote, so tell us what you have in mind.
           </p>
         </Reveal>
       </div>
