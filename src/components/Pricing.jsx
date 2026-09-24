@@ -3,8 +3,8 @@ import Reveal from './Reveal'
 const offerings = [
   {
     title: 'Ticketed Events',
-    price: 'Varies',
-    unit: 'announced with each date',
+    price: 'From $60',
+    unit: 'per ticket',
     body: 'Open classes we host alongside brand activations, vendors and markets. Guests buy a ticket, claim a Micro, and stay for whatever the partners have set up around it.',
     includes: [
       'Single ticket, no membership',
@@ -21,7 +21,7 @@ const offerings = [
     unit: 'quoted per event',
     body: 'You choose the place — your home, an office, a rooftop, a venue you have already booked — and we arrive with the Micros and run the class for your group.',
     includes: [
-      'Quoted by headcount, duration and travel',
+      'Quoted to your group size, timing and location',
       'We set up at your location',
       'Machines, instruction and playlist included',
       'All levels coached in the same room',
