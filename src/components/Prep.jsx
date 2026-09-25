@@ -14,7 +14,7 @@ const bring = [
     body: 'Whatever you feel good moving in. Fitted or loose, it\u2019s a workout — comfort matters more than anything else.',
   },
   {
-    title: 'Arrive 15\u201330 minutes early',
+    title: 'Arrive 30 minutes early',
     body: 'Enough time to check in, settle in and get familiar with your machine and your space before the first move.',
   },
 ]
