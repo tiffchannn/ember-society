@@ -13,8 +13,8 @@ const pillars = [
   },
   {
     n: '03',
-    title: 'The Room Carries You',
-    body: 'Shaking through a hold is easier when the whole room is shaking with you. Community is the part people come back for.',
+    title: 'You\u2019re Not Shaking Alone',
+    body: 'Shaking through a hold is easier when everyone around you is shaking too. Community is what people come for, and what keeps them coming back.',
   },
   {
     n: '04',
