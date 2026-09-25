@@ -26,7 +26,7 @@ export default function Logo({ tone = 'ink', compact = false }) {
   return (
     <span className={`inline-flex items-center ${color}`}>
       <span
-        className={compact ? 'h-12' : 'h-16'}
+        className={compact ? 'h-10' : 'h-12'}
         style={masked(lockupSrc, '1400 / 544')}
         aria-hidden="true"
       />

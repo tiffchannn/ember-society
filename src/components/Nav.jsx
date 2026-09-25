@@ -2,12 +2,12 @@ import { useEffect, useState } from 'react'
 import Logo from './Logo'
 
 const links = [
-  { href: '#story', label: 'Our Story' },
-  { href: '#experience', label: 'The Experience' },
+  { href: '#story', label: 'What We Believe' },
+  { href: '#experience', label: 'Experience' },
   { href: '#micro', label: 'The Micro' },
   { href: '#instructors', label: 'Instructors' },
   { href: '#pricing', label: 'Events' },
-  { href: '#prep', label: 'Before You Come' },
+  { href: '#prep', label: 'Class Prep' },
 ]
 
 export default function Nav() {
@@ -36,17 +36,17 @@ export default function Nav() {
         solid ? 'bg-cream/95 py-3 shadow-[0_1px_0_rgba(64,50,61,0.12)] backdrop-blur' : 'py-6'
       }`}
     >
-      <nav className="mx-auto flex max-w-6xl items-center justify-between gap-10 px-6">
+      <nav className="mx-auto flex max-w-6xl items-center justify-between gap-8 px-6">
         <a href="#top" onClick={() => setOpen(false)} aria-label="Ember Society home">
           <Logo tone={solid ? 'ink' : 'cream'} compact={solid} />
         </a>
 
-        <div className="hidden items-center gap-8 lg:flex">
+        <div className="hidden items-center gap-6 lg:flex">
           {links.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className={`eyebrow whitespace-nowrap transition-colors hover:text-gold ${
+              className={`eyebrow whitespace-nowrap text-[0.65rem] tracking-[0.22em] transition-colors hover:text-gold ${
                 solid ? 'text-ink/70' : 'text-cream/80'
               }`}
             >
@@ -55,7 +55,7 @@ export default function Nav() {
           ))}
           <a
             href="#book"
-            className="eyebrow whitespace-nowrap rounded-full bg-gold px-6 py-3 text-soot transition-colors hover:bg-gold-soft"
+            className="eyebrow whitespace-nowrap rounded-full bg-gold px-5 py-3 text-[0.65rem] tracking-[0.22em] text-soot transition-colors hover:bg-gold-soft"
           >
             Book an Event
           </a>

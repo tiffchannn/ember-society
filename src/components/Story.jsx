@@ -11,7 +11,7 @@ export default function Story() {
     <section id="story" className="bg-clay py-28 text-ink md:py-36">
       <div className="mx-auto max-w-4xl px-6 text-center">
         <Reveal>
-          <p className="eyebrow text-ember">Our Story</p>
+          <p className="eyebrow text-ember">What We Believe</p>
         </Reveal>
 
         <Reveal delay={120}>
@@ -41,7 +41,7 @@ export default function Story() {
         <div className="mt-16 grid gap-px overflow-hidden rounded-2xl bg-ink/10 text-left sm:grid-cols-3">
           {through.map(([lead, rest], i) => (
             <Reveal key={lead} delay={i * 110} className="bg-clay p-8">
-              <h3 className="display text-lg text-ember">{lead},</h3>
+              <h3 className="display text-lg text-ember">{lead}</h3>
               <p className="mt-3 text-sm leading-relaxed text-ink/70">{rest}</p>
             </Reveal>
           ))}
