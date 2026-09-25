@@ -23,7 +23,6 @@ const expect = [
   ['45 minutes', 'A full-body class — slow, low impact, and controlled.'],
   ['Zero experience needed', 'Every move has a modification, and your instructor will guide you.'],
   ['The shake is the point', 'Muscles shaking means you are in the right place. Stay with it.'],
-  ['No guesswork on springs', 'Your instructor names the spring load for every move as a starting point.'],
 ]
 
 export default function Prep() {
