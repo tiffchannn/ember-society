@@ -36,8 +36,8 @@ export default function Hero() {
           className="reveal reveal-in mx-auto mt-10 max-w-xl text-base leading-relaxed text-cream/75 sm:text-lg"
           style={{ animationDelay: '360ms' }}
         >
-          We bring Lagree to you — ticketed pop-ups alongside our partners, and private
-          events at your place. Anywhere becomes a studio.
+          We bring Lagree to you — pop-ups alongside local vendors, and private events
+          wherever you are. Anywhere becomes a studio.
         </p>
 
         <div
