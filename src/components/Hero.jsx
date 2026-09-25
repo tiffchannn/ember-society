@@ -1,5 +1,6 @@
 import EmberField from './EmberField'
 import embersPhoto from '../assets/embers.jpg'
+import { SERVICE_AREA } from '../config'
 
 export default function Hero() {
   return (
@@ -57,6 +58,13 @@ export default function Hero() {
             What to Expect
           </a>
         </div>
+
+        <p
+          className="reveal reveal-in mt-10 text-[0.7rem] tracking-[0.3em] text-cream/65 uppercase"
+          style={{ animationDelay: '600ms' }}
+        >
+          {SERVICE_AREA}
+        </p>
       </div>
 
       <a
