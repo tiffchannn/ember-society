@@ -35,9 +35,12 @@ export default function Experience() {
                 A class that meets you where you are
               </h2>
               <p className="mt-7 max-w-md text-base leading-relaxed text-ink/70">
-                Ember Society is a travelling movement and wellness experience. We bring the
-                equipment, the playlist and the coaching — you bring the people and the place.
-                Lagree is where we start; breathwork, mat Pilates and more are on the way.
+                Ember Society is a travelling movement and wellness experience. Every class is
+                built on the Lagree Method — slow, controlled movement that holds your muscles
+                under tension the whole way through, without the impact on your joints. We bring
+                the machines and the coaching — you just show up, whether that&apos;s at one of our
+                pop-ups or an event you&apos;re hosting. Lagree is where we start, with more
+                wellness experiences to come.
               </p>
             </Reveal>
           </div>
