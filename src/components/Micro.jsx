@@ -22,10 +22,10 @@ export default function Micro() {
               makes Lagree possible anywhere.
             </p>
             <p className="mt-5 text-base leading-relaxed text-cream/60">
-              At only 71 inches long, 18.5 inches wide and approximately 53 pounds, the Micro is
-              the smallest and most portable Lagree machine — designed for homes, studios, private
-              training, outdoor workouts, pop-ups, large-scale events, and virtually anywhere
-              movement can happen.
+              It is the smallest and most portable machine Lagree makes: light enough to carry
+              in, compact enough to line up a full class in a space that was never meant to be a
+              studio. It travels in the back of a car and sets up in
+              minutes, so the class can meet people where they already are.
             </p>
 
             <dl className="mt-11 grid grid-cols-3 gap-6 border-t border-cream/15 pt-8">
