@@ -5,6 +5,7 @@ const specs = [
   { value: '71"', label: 'Length' },
   { value: '18.5"', label: 'Width' },
   { value: '53 lb', label: 'Weight' },
+  { value: '9 ft²', label: 'Footprint' },
 ]
 
 export default function Micro() {
@@ -24,11 +25,11 @@ export default function Micro() {
             <p className="mt-5 text-base leading-relaxed text-cream/60">
               It is the smallest and most portable machine Lagree makes: light enough to carry
               in, compact enough to line up a full class in a space that was never meant to be a
-              studio. It travels in the back of a car and sets up in
-              minutes, so the class can meet people where they already are.
+              studio. It sets up in minutes, so the class can meet
+              people where they already are.
             </p>
 
-            <dl className="mt-11 grid grid-cols-3 gap-6 border-t border-cream/15 pt-8">
+            <dl className="mt-11 grid grid-cols-2 gap-6 border-t border-cream/15 pt-8 sm:grid-cols-4">
               {specs.map((spec) => (
                 <div key={spec.label}>
                   <dt className="eyebrow text-cream/45">{spec.label}</dt>
