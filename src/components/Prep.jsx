@@ -3,19 +3,19 @@ import Reveal from './Reveal'
 const bring = [
   {
     title: 'Grip socks',
-    body: 'Required on the Micro — the carriage moves and socks keep you steady. We keep a few spare pairs on hand.',
+    body: 'Required on the Micro — the carriage moves, and grip socks keep you steady. Bring your own pair.',
   },
   {
     title: 'Water',
     body: 'Bring a full bottle. Forty-five minutes of time under tension is thirstier than it looks.',
   },
   {
-    title: 'Fitted clothing',
-    body: 'Leggings or shorts you can move in. Loose layers catch on the springs and handles.',
+    title: 'Activewear',
+    body: 'Whatever you feel good moving in. Fitted or loose, it\u2019s a workout — comfort matters more than anything else.',
   },
   {
-    title: 'Arrive 15 minutes early',
-    body: 'We size the machine to you, walk through the springs and answer questions before the first move.',
+    title: 'Arrive 15\u201330 minutes early',
+    body: 'Enough time to check in, settle in and get familiar with your machine and your space before the first move.',
   },
 ]
 
