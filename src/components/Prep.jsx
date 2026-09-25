@@ -20,8 +20,8 @@ const bring = [
 ]
 
 const expect = [
-  ['45 minutes', 'A full-body class — slow, controlled, and constant.'],
-  ['Zero experience needed', 'Every move has a modification, and we coach them out loud.'],
+  ['45 minutes', 'A full-body class — slow, low impact, and controlled.'],
+  ['Zero experience needed', 'Every move has a modification, and your instructor will guide you.'],
   ['The shake is the point', 'Muscles shaking means you are in the right place. Stay with it.'],
   ['You set the spring', 'Lighter or heavier, we adjust with you mid-class. Nothing is one-size.'],
 ]
