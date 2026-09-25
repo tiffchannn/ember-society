@@ -9,7 +9,7 @@ const pillars = [
   {
     n: '02',
     title: 'Every Body Welcome',
-    body: 'Every move is scalable. First-timers train beside regulars, and we coach modifications out loud so nobody is guessing.',
+    body: 'Every move is scalable. Whatever level you walk in at, we call out modifications and advancements as we go — so you\u2019re never left guessing.',
   },
   {
     n: '03',
