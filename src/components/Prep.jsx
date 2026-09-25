@@ -36,8 +36,9 @@ export default function Prep() {
             Class prep &amp; what to expect
           </h2>
           <p className="mt-7 text-base leading-relaxed text-ink/70">
-            First time on a Lagree machine? You&apos;re in good company — most of our rooms are
-            half first-timers. Here&apos;s everything you need.
+            New to Lagree, or just new to this machine? Every class starts with a walkthrough
+            from your instructor — we never assume what you&apos;ve done before. Here&apos;s
+            everything else you need.
           </p>
         </Reveal>
 
