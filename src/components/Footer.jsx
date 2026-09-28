@@ -72,7 +72,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 flex flex-col gap-3 text-xs text-cream/35 sm:flex-row sm:items-center sm:justify-between">
-          {/* Terms & Waiver link goes back here once the page is lawyer-reviewed */}
+          {/* No waiver link here by decision — /waiver is reached from checkout only */}
           <p>&copy; {new Date().getFullYear()} Ember Society. All rights reserved.</p>
           <p className="tracking-[0.25em] uppercase">Find Your Spark</p>
         </div>
