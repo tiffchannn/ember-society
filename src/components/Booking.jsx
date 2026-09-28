@@ -15,9 +15,6 @@ const emptyForm = {
   email: '',
   phone: '',
   eventType: eventTypes[0],
-  date: '',
-  headcount: '',
-  location: '',
   details: '',
 }
 
@@ -34,9 +31,6 @@ export default function Booking() {
       `Email: ${form.email}`,
       `Phone: ${form.phone || '—'}`,
       `Event type: ${form.eventType}`,
-      `Preferred date: ${form.date || 'flexible'}`,
-      `Headcount: ${form.headcount || 'TBD'}`,
-      `Location: ${form.location || 'TBD'}`,
       '',
       'Details:',
       form.details || '—',
@@ -150,38 +144,6 @@ export default function Booking() {
                   </label>
                 </div>
 
-                <div className="grid gap-5 sm:grid-cols-3">
-                  <label className="block">
-                    <span className="eyebrow text-cream/50">Date</span>
-                    <input
-                      type="date"
-                      value={form.date}
-                      onChange={update('date')}
-                      className={`${field} mt-2.5 [color-scheme:dark]`}
-                    />
-                  </label>
-                  <label className="block">
-                    <span className="eyebrow text-cream/50">Headcount</span>
-                    <input
-                      type="number"
-                      min="1"
-                      value={form.headcount}
-                      onChange={update('headcount')}
-                      className={`${field} mt-2.5`}
-                      placeholder="12"
-                    />
-                  </label>
-                  <label className="block">
-                    <span className="eyebrow text-cream/50">Location</span>
-                    <input
-                      value={form.location}
-                      onChange={update('location')}
-                      className={`${field} mt-2.5`}
-                      placeholder="City or venue"
-                    />
-                  </label>
-                </div>
-
                 <label className="block">
                   <span className="eyebrow text-cream/50">Tell us more</span>
                   <textarea
@@ -189,7 +151,7 @@ export default function Booking() {
                     value={form.details}
                     onChange={update('details')}
                     className={`${field} mt-2.5 resize-none`}
-                    placeholder="Indoor or outdoor, the occasion, timing, anything else we should know."
+                    placeholder="When and where you're thinking, roughly how many people, the occasion — whatever you know so far."
                   />
                 </label>
 
