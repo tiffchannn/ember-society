@@ -32,6 +32,12 @@ const sections = [
     ],
   },
   {
+    title: 'Emergency medical treatment',
+    body: [
+      'If you are injured or become unwell at an event, you consent to us seeking emergency medical care on your behalf, and to receiving treatment from emergency responders. You are responsible for the cost of any treatment or transport.',
+    ],
+  },
+  {
     title: 'Photography and media',
     body: [
       'Photography and video are sometimes captured at our events for promotional use. By attending, you agree that we may use images in which you appear.',
@@ -64,6 +70,12 @@ const sections = [
       'PLACEHOLDER — terms not yet decided. Needs to cover: whether tickets are refundable, how far ahead a guest can cancel, whether spots can be transferred to someone else, what happens if we cancel or reschedule an event, and deposit terms for private bookings.',
     ],
     flagged: true,
+  },
+  {
+    title: 'How long this agreement lasts',
+    body: [
+      'This agreement applies to the event you are signing for and to any Ember Society class or event you attend afterwards, so you do not need to sign again each time. It stays in effect until you withdraw it in writing.',
+    ],
   },
   {
     title: 'Changes to these terms',
