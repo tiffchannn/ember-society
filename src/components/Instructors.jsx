@@ -21,7 +21,7 @@ const instructors = [
     initial: 'T',
     photo: tiffanyPhoto,
     role: 'Co-Founder · Lagree Instructor',
-    quote: 'Like an ember, the lowest moments can still hold the spark for something bigger than yourself.',
+    quote: 'The lowest moments can still hold the spark for something bigger than yourself.',
     paragraphs: [
       'Tiffany is a Lagree instructor who fell in love with the method for more than just the strength it builds — it was the sense of community found in a room full of people pushing through class together.',
       'As an instructor, what she loves most is watching that exact moment happen for her clients — the second in a hold when it feels like you can’t stay there any longer, and then you do.',
