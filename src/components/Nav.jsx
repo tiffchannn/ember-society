@@ -5,7 +5,7 @@ const links = [
   { href: '#story', label: 'What We Believe' },
   { href: '#experience', label: 'Experience' },
   { href: '#micro', label: 'The Micro' },
-  { href: '#instructors', label: 'Instructors' },
+  { href: '#instructors', label: 'Founders' },
   { href: '#pricing', label: 'Events' },
   { href: '#prep', label: 'Class Prep' },
 ]

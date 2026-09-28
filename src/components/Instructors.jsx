@@ -12,7 +12,7 @@ const instructors = [
     quote: 'Challenge is where we discover what we are truly capable of.',
     paragraphs: [
       'Estefany is a Lagree instructor who found more than movement when she discovered Lagree — she found a deeper understanding of her own strength and resilience.',
-      'Through movement, she learned that challenge is where we discover what we’re truly capable of, and that the strength we find in those moments carries far beyond the workout. Lagree also brought her a community of people who share that same desire to grow, challenge themselves, and become better.',
+      'Through movement, she learned that the strength we find in those moments carries far beyond the workout. Lagree also brought her a community of people who share that same desire to grow, challenge themselves, and become better.',
       'To Estefany, Ember represents the strength that remains after the challenge, the resilience that continues to burn within us, and the belief that our spark is always there, waiting to be found and nurtured.',
     ],
   },
@@ -21,11 +21,11 @@ const instructors = [
     initial: 'T',
     photo: tiffanyPhoto,
     role: 'Co-Founder · Lagree Instructor',
-    quote: 'The second in a hold when it feels like you can’t stay there — and then you do.',
+    quote: 'Like an ember, the lowest moments can still hold the spark for something bigger than yourself.',
     paragraphs: [
       'Tiffany is a Lagree instructor who fell in love with the method for more than just the strength it builds — it was the sense of community found in a room full of people pushing through class together.',
       'As an instructor, what she loves most is watching that exact moment happen for her clients — the second in a hold when it feels like you can’t stay there any longer, and then you do.',
-      'Tiffany found Lagree during a season of real change, and movement became her therapeutic outlet through life’s ebbs and flows. That’s exactly what Ember Society represents to her: even when things don’t go as planned, you don’t just recover — you rise, together, stronger than before. Like an ember, the lowest moments can still hold the spark for something bigger than yourself.',
+      'Tiffany found Lagree during a season of real change, and movement became her therapeutic outlet through life’s ebbs and flows. That’s exactly what Ember Society represents to her: even when things don’t go as planned, you don’t just recover — you rise, together, stronger than before.',
     ],
   },
 ]
@@ -35,9 +35,9 @@ export default function Instructors() {
     <section id="instructors" className="bg-cream py-28 md:py-36">
       <div className="mx-auto max-w-6xl px-6">
         <Reveal className="max-w-2xl">
-          <p className="eyebrow text-ember">Meet Your Instructors</p>
+          <p className="eyebrow text-ember">Meet the Founders</p>
           <h2 className="display mt-6 text-4xl leading-tight sm:text-5xl">
-            Two instructors, one spark
+            Two founders, one spark
           </h2>
         </Reveal>
 
