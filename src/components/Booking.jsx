@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import EmberField from './EmberField'
 import Reveal from './Reveal'
-import WaiverModal from './WaiverModal'
 import { CONTACT_EMAIL } from '../config'
 
 const eventTypes = [
@@ -25,8 +24,6 @@ const emptyForm = {
 
 export default function Booking() {
   const [form, setForm] = useState(emptyForm)
-  const [waiver, setWaiver] = useState(false)
-  const [showWaiver, setShowWaiver] = useState(false)
   const [sent, setSent] = useState(false)
 
   const update = (field) => (e) => setForm((prev) => ({ ...prev, [field]: e.target.value }))
@@ -44,8 +41,6 @@ export default function Booking() {
       '',
       'Details:',
       form.details || '—',
-      '',
-      'Liability waiver acknowledged: yes',
     ].join('\n')
 
     window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(
@@ -195,31 +190,6 @@ export default function Booking() {
                   />
                 </label>
 
-                <label className="flex cursor-pointer items-start gap-4 rounded-lg border border-cream/15 bg-cream/5 p-5">
-                  <input
-                    required
-                    type="checkbox"
-                    checked={waiver}
-                    onChange={(e) => setWaiver(e.target.checked)}
-                    className="mt-0.5 h-4 w-4 shrink-0 accent-[#d1ac65]"
-                  />
-                  <span className="text-sm leading-relaxed text-cream/70">
-                    I have read and agree to the{' '}
-                    <button
-                      type="button"
-                      onClick={(e) => {
-                        e.preventDefault()
-                        setShowWaiver(true)
-                      }}
-                      className="text-gold underline underline-offset-4 hover:text-gold-soft"
-                    >
-                      liability waiver
-                    </button>{' '}
-                    on behalf of myself and my guests, and understand every participant confirms it
-                    before class.
-                  </span>
-                </label>
-
                 <button
                   type="submit"
                   className="eyebrow w-full rounded-full bg-gold px-8 py-4.5 text-soot transition-colors hover:bg-gold-soft"
@@ -231,8 +201,6 @@ export default function Booking() {
           </Reveal>
         </div>
       </div>
-
-      {showWaiver && <WaiverModal onClose={() => setShowWaiver(false)} />}
     </section>
   )
 }

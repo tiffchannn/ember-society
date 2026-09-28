@@ -72,8 +72,8 @@ export default function Prep() {
               <div className="mt-12 rounded-2xl border border-gold/40 bg-gold/10 p-7">
                 <p className="eyebrow text-ember">Heads up</p>
                 <p className="mt-4 text-sm leading-relaxed text-ink/75">
-                  Every guest signs a liability waiver before class. You&apos;ll check it off when
-                  you book, so there&apos;s nothing to fill out on the day.
+                  Every guest signs a liability waiver before class. We&apos;ll send it to you
+                  once your spot is confirmed, so there&apos;s nothing to fill out on the day.
                 </p>
               </div>
             </Reveal>
