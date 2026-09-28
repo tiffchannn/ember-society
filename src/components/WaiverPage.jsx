@@ -99,8 +99,6 @@ export default function WaiverPage() {
           Terms &amp; Liability Waiver
         </h1>
 
-        <p className="eyebrow mt-6 text-ink/45">Last updated September 2026</p>
-
         <p className="mt-10 text-base leading-relaxed text-ink/70">
           These terms apply to everyone who takes part in an Ember Society class or event, whether
           you bought a ticket yourself or were booked in as part of a private group. Please read
@@ -137,7 +135,7 @@ export default function WaiverPage() {
             .
           </p>
           <p className="mt-6 text-xs text-ink/40">
-            &copy; {new Date().getFullYear()} Ember Society.
+            Last updated September 2026 · &copy; {new Date().getFullYear()} Ember Society.
           </p>
         </div>
       </main>
