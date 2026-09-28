@@ -51,11 +51,10 @@ const sections = [
     ],
   },
   {
-    title: 'Participants under 18',
+    title: 'Age requirement',
     body: [
-      'PLACEHOLDER — policy not yet decided. Either state a minimum age, or require a parent or guardian to sign on behalf of a minor and be present at the event.',
+      'Ember Society classes and events are for participants aged 18 and over. By signing, you confirm that you are at least 18 years old. We may ask for identification.',
     ],
-    flagged: true,
   },
   {
     title: 'Release of liability',
@@ -67,9 +66,10 @@ const sections = [
   {
     title: 'Booking, cancellations and refunds',
     body: [
-      'PLACEHOLDER — terms not yet decided. Needs to cover: whether tickets are refundable, how far ahead a guest can cancel, whether spots can be transferred to someone else, what happens if we cancel or reschedule an event, and deposit terms for private bookings.',
+      'Tickets to our events are non-refundable. Please be sure of the date before you book.',
+      'PLACEHOLDER — still to decide: whether a ticket can be transferred to someone else, what happens if we cancel or reschedule an event, and deposit terms for private bookings.',
     ],
-    flagged: true,
+    partial: true,
   },
   {
     title: 'How long this agreement lasts',
@@ -131,7 +131,7 @@ export default function WaiverPage() {
                   <p
                     key={paragraph.slice(0, 32)}
                     className={`text-sm leading-relaxed ${
-                      section.flagged
+                      section.flagged || (section.partial && paragraph.startsWith('PLACEHOLDER'))
                         ? 'rounded-lg border border-ember/30 bg-ember/5 p-4 text-ember'
                         : 'text-ink/70'
                     }`}
