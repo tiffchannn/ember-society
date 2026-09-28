@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import EmberField from './EmberField'
 import Reveal from './Reveal'
-import { CONTACT_EMAIL } from '../config'
+import { CONTACT_EMAIL, FORM_ENDPOINT } from '../config'
 
 const eventTypes = [
   'Private event',
@@ -20,12 +20,11 @@ const emptyForm = {
 
 export default function Booking() {
   const [form, setForm] = useState(emptyForm)
-  const [sent, setSent] = useState(false)
+  const [status, setStatus] = useState('idle') // idle | sending | sent | drafted | error
 
   const update = (field) => (e) => setForm((prev) => ({ ...prev, [field]: e.target.value }))
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
+  const openEmailDraft = () => {
     const body = [
       `Name: ${form.name}`,
       `Email: ${form.email}`,
@@ -39,7 +38,38 @@ export default function Booking() {
     window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(
       `Event inquiry — ${form.eventType}`,
     )}&body=${encodeURIComponent(body)}`
-    setSent(true)
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+
+    // No form service configured yet: fall back to a prefilled email draft.
+    if (!FORM_ENDPOINT) {
+      openEmailDraft()
+      setStatus('drafted')
+      return
+    }
+
+    setStatus('sending')
+    try {
+      const response = await fetch(FORM_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          phone: form.phone,
+          eventType: form.eventType,
+          details: form.details,
+          _subject: `Event inquiry — ${form.eventType}`,
+        }),
+      })
+      if (!response.ok) throw new Error(`Form endpoint returned ${response.status}`)
+      setStatus('sent')
+      setForm(emptyForm)
+    } catch {
+      setStatus('error')
+    }
   }
 
   const field =
@@ -69,23 +99,34 @@ export default function Booking() {
           </Reveal>
 
           <Reveal delay={120}>
-            {sent ? (
+            {status === 'sent' || status === 'drafted' ? (
               <div className="rounded-2xl border border-gold/40 bg-cream/5 p-10 text-center">
-                <h3 className="display text-2xl text-gold">Your email draft is open</h3>
+                <h3 className="display text-2xl text-gold">
+                  {status === 'sent' ? 'Request sent' : 'Your email draft is open'}
+                </h3>
                 <p className="mt-5 text-sm leading-relaxed text-cream/70">
-                  Hit send in your mail app and we&apos;ll get back to you within 48 hours. If
-                  nothing opened, email us directly at{' '}
-                  <a href={`mailto:${CONTACT_EMAIL}`} className="text-gold hover:underline">
-                    {CONTACT_EMAIL}
-                  </a>
-                  .
+                  {status === 'sent' ? (
+                    <>
+                      Thanks — we&apos;ll come back to you within 48 hours. Keep an eye on your
+                      inbox, and check spam if you don&apos;t hear from us.
+                    </>
+                  ) : (
+                    <>
+                      Hit send in your mail app and we&apos;ll get back to you within 48 hours. If
+                      nothing opened, email us directly at{' '}
+                      <a href={`mailto:${CONTACT_EMAIL}`} className="text-gold hover:underline">
+                        {CONTACT_EMAIL}
+                      </a>
+                      .
+                    </>
+                  )}
                 </p>
                 <button
                   type="button"
-                  onClick={() => setSent(false)}
+                  onClick={() => setStatus('idle')}
                   className="eyebrow mt-8 rounded-full border border-cream/25 px-7 py-3 text-cream transition-colors hover:border-gold hover:text-gold"
                 >
-                  Edit the request
+                  {status === 'sent' ? 'Send another' : 'Edit the request'}
                 </button>
               </div>
             ) : (
@@ -157,10 +198,21 @@ export default function Booking() {
 
                 <button
                   type="submit"
-                  className="eyebrow w-full rounded-full bg-gold px-8 py-4.5 text-soot transition-colors hover:bg-gold-soft"
+                  disabled={status === 'sending'}
+                  className="eyebrow w-full rounded-full bg-gold px-8 py-4.5 text-soot transition-colors hover:bg-gold-soft disabled:opacity-60"
                 >
-                  Send Request
+                  {status === 'sending' ? 'Sending…' : 'Send Request'}
                 </button>
+
+                {status === 'error' && (
+                  <p className="rounded-lg border border-gold/40 bg-gold/10 p-4 text-sm leading-relaxed text-cream/80">
+                    That didn&apos;t go through. Try again, or email us directly at{' '}
+                    <a href={`mailto:${CONTACT_EMAIL}`} className="text-gold hover:underline">
+                      {CONTACT_EMAIL}
+                    </a>
+                    .
+                  </p>
+                )}
               </form>
             )}
           </Reveal>
