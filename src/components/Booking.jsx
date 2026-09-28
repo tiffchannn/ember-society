@@ -88,7 +88,7 @@ export default function Booking() {
             </h2>
             <p className="mt-7 text-base leading-relaxed text-cream/70">
               Send us the shape of it — who, when, where and roughly how many. We&apos;ll come
-              back with availability and a quote within 48 hours.
+              back with availability and a quote.
             </p>
             <p className="mt-8 text-sm text-cream/50">
               Prefer email?{' '}
@@ -107,12 +107,12 @@ export default function Booking() {
                 <p className="mt-5 text-sm leading-relaxed text-cream/70">
                   {status === 'sent' ? (
                     <>
-                      Thanks — we&apos;ll come back to you within 48 hours. Keep an eye on your
-                      inbox, and check spam if you don&apos;t hear from us.
+                      Thanks — we&apos;ll be in touch soon. Keep an eye on your inbox, and
+                      check spam if you don&apos;t hear from us.
                     </>
                   ) : (
                     <>
-                      Hit send in your mail app and we&apos;ll get back to you within 48 hours. If
+                      Hit send in your mail app and we&apos;ll get back to you soon. If
                       nothing opened, email us directly at{' '}
                       <a href={`mailto:${CONTACT_EMAIL}`} className="text-gold hover:underline">
                         {CONTACT_EMAIL}
