@@ -16,6 +16,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         waiver: resolve(__dirname, 'waiver/index.html'),
+        privacy: resolve(__dirname, 'privacy/index.html'),
       },
     },
   },

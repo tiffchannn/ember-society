@@ -72,8 +72,15 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 flex flex-col gap-3 text-xs text-cream/35 sm:flex-row sm:items-center sm:justify-between">
-          {/* No waiver link here by decision — /waiver is reached from checkout only */}
-          <p>&copy; {new Date().getFullYear()} Ember Society. All rights reserved.</p>
+          {/* No waiver link here by decision — /waiver is reached from checkout only.
+              Privacy policy must stay linked: California requires conspicuous posting. */}
+          <p>
+            &copy; {new Date().getFullYear()} Ember Society. All rights reserved.
+            {' · '}
+            <a href="/privacy/" className="transition-colors hover:text-gold">
+              Privacy
+            </a>
+          </p>
           <p className="tracking-[0.25em] uppercase">Find Your Spark</p>
         </div>
       </div>
