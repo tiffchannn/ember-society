@@ -99,13 +99,7 @@ export default function WaiverPage() {
           Terms &amp; Liability Waiver
         </h1>
 
-        <div className="mt-8 rounded-2xl border border-ember/40 bg-ember/10 p-6">
-          <p className="eyebrow text-ember">Draft — not yet in effect</p>
-          <p className="mt-3 text-sm leading-relaxed text-ink/75">
-            This text is a working draft awaiting review by a lawyer. It is not a binding agreement
-            and should not be relied on until that review is complete.
-          </p>
-        </div>
+        <p className="eyebrow mt-6 text-ink/45">Last updated September 2026</p>
 
         <p className="mt-10 text-base leading-relaxed text-ink/70">
           These terms apply to everyone who takes part in an Ember Society class or event, whether
