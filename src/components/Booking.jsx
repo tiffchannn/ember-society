@@ -7,7 +7,6 @@ const eventTypes = [
   'Private event',
   'Vendor or brand partnership',
   'Corporate or team offsite',
-  'Question about an upcoming event',
   'Not sure yet',
 ]
 
