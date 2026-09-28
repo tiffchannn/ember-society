@@ -73,8 +73,7 @@ export default function Prep() {
                 <p className="eyebrow text-ember">Heads up</p>
                 <p className="mt-4 text-sm leading-relaxed text-ink/75">
                   You agree to our liability waiver when you check out, so there&apos;s nothing
-                  to fill out on the day. Booking a private event? We&apos;ll cover it with you
-                  when we quote.
+                  to fill out on the day.
                 </p>
               </div>
             </Reveal>
