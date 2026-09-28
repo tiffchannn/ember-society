@@ -68,9 +68,8 @@ const sections = [
     body: [
       'Tickets to our events are non-refundable and non-transferable. They cannot be cancelled, rescheduled, or moved to a different date, so please be sure before you book.',
       'If we have to cancel an event, we will either move you to a rescheduled date or refund your ticket.',
-      'PLACEHOLDER — still to decide: deposit terms for private bookings.',
+      'Private bookings are quoted individually, and any deposit or cancellation terms are agreed with you as part of that quote.',
     ],
-    partial: true,
   },
   {
     title: 'Changes to these terms',
@@ -125,11 +124,7 @@ export default function WaiverPage() {
                 {section.body.map((paragraph) => (
                   <p
                     key={paragraph.slice(0, 32)}
-                    className={`text-sm leading-relaxed ${
-                      section.flagged || (section.partial && paragraph.startsWith('PLACEHOLDER'))
-                        ? 'rounded-lg border border-ember/30 bg-ember/5 p-4 text-ember'
-                        : 'text-ink/70'
-                    }`}
+                    className="text-sm leading-relaxed text-ink/70"
                   >
                     {paragraph}
                   </p>
