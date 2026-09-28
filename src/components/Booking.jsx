@@ -4,10 +4,10 @@ import Reveal from './Reveal'
 import { CONTACT_EMAIL } from '../config'
 
 const eventTypes = [
-  'Private event at my location',
+  'Private event',
   'Vendor or brand partnership',
   'Corporate or team offsite',
-  'Tickets for an upcoming event',
+  'Question about an upcoming event',
   'Not sure yet',
 ]
 
