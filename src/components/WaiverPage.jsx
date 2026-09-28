@@ -66,16 +66,10 @@ const sections = [
   {
     title: 'Booking, cancellations and refunds',
     body: [
-      'Tickets to our events are non-refundable. Please be sure of the date before you book.',
-      'PLACEHOLDER — still to decide: whether a ticket can be transferred to someone else, what happens if we cancel or reschedule an event, and deposit terms for private bookings.',
+      'Tickets to our events are non-refundable and non-transferable. They cannot be cancelled, rescheduled, or moved to a different date, so please be sure before you book.',
+      'PLACEHOLDER — still to decide: what we offer if Ember Society cancels or reschedules an event, and deposit terms for private bookings.',
     ],
     partial: true,
-  },
-  {
-    title: 'How long this agreement lasts',
-    body: [
-      'This agreement applies to the event you are signing for and to any Ember Society class or event you attend afterwards, so you do not need to sign again each time. It stays in effect until you withdraw it in writing.',
-    ],
   },
   {
     title: 'Changes to these terms',
