@@ -136,7 +136,11 @@ export default function Booking() {
                     <select
                       value={form.eventType}
                       onChange={update('eventType')}
-                      className={`${field} mt-2.5`}
+                      className={`${field} mt-2.5 appearance-none bg-[length:12px] bg-[right_1rem_center] bg-no-repeat pr-12`}
+                      style={{
+                        backgroundImage:
+                          "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23f6f6e9' stroke-opacity='.6' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E\")",
+                      }}
                     >
                       {eventTypes.map((type) => (
                         <option key={type} value={type} className="bg-char">
@@ -154,7 +158,7 @@ export default function Booking() {
                       type="date"
                       value={form.date}
                       onChange={update('date')}
-                      className={`${field} mt-2.5`}
+                      className={`${field} mt-2.5 [color-scheme:dark]`}
                     />
                   </label>
                   <label className="block">
