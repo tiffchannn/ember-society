@@ -11,7 +11,7 @@ const sections = [
   {
     title: 'What we collect',
     body: [
-      'When you send an enquiry through our booking form: your name, email address, phone number if you choose to give one, the type of event you are asking about, and whatever you write in your message.',
+      'When you send an inquiry through our booking form: your name, email address, phone number if you choose to give one, the type of event you are asking about, and whatever you write in your message.',
       'When you buy a ticket: your name, email address, phone number and billing details. Payment card details are entered directly with our payment processor and never reach us.',
       'When you sign our waiver: your name, email address, date of birth, and your signature, along with anything you tell an instructor about injuries or health conditions.',
       'If you join our mailing list: your email address, and your phone number if you opt in to text messages.',
@@ -20,14 +20,14 @@ const sections = [
   {
     title: 'Why we collect it',
     body: [
-      'To answer your enquiry and quote your event. To sell you a ticket and get you into the right class. To keep you safe by knowing about injuries or conditions before you train. To contact you if an event changes. To send you news about upcoming events, if you asked us to.',
+      'To answer your inquiry and quote your event. To sell you a ticket and get you into the right class. To keep you safe by knowing about injuries or conditions before you train. To contact you if an event changes. To send you news about upcoming events, if you asked us to.',
       'We do not sell your personal information, and we do not share it for anyone else’s advertising.',
     ],
   },
   {
     title: 'Who processes it for us',
     body: [
-      'We use a small number of third-party services to run the business, and your information passes through them: Stripe for payments, Formspree for booking enquiries submitted through this site, Google for our email, and a waiver service for signed waivers. Each holds your information under its own privacy policy.',
+      'We use a small number of third-party services to run the business, and your information passes through them: Stripe for payments, Formspree for booking inquiries submitted through this site, Google for our email, and a waiver service for signed waivers. Each holds your information under its own privacy policy.',
       'We may also share information where we are required to by law, or where it is necessary to respond to a medical emergency at an event.',
     ],
   },
@@ -40,7 +40,7 @@ const sections = [
   {
     title: 'How long we keep it',
     body: [
-      'Enquiries are kept while we are in conversation with you and for a reasonable period afterwards. Signed waivers and payment records are kept for as long as we may need them for insurance, tax or legal reasons. Mailing list details are kept until you unsubscribe.',
+      'Inquiries are kept while we are in conversation with you and for a reasonable period afterwards. Signed waivers and payment records are kept for as long as we may need them for insurance, tax or legal reasons. Mailing list details are kept until you unsubscribe.',
     ],
   },
   {

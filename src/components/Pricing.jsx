@@ -101,7 +101,7 @@ export default function Pricing() {
 
         <Reveal delay={200}>
           <p className="mt-10 text-center text-sm text-ink/55">
-            Based in the San Gabriel Valley and travelling throughout LA County — Orange County
+            Based in the San Gabriel Valley and traveling throughout LA County — Orange County
             and the Inland Empire on request. Group size, duration and travel all factor into a
             quote, so tell us what you have in mind.
           </p>

@@ -35,7 +35,7 @@ export default function Experience() {
                 A class that meets you where you are
               </h2>
               <p className="mt-7 max-w-md text-base leading-relaxed text-ink/70">
-                Ember Society is a travelling movement and wellness experience. Every class is
+                Ember Society is a traveling movement and wellness experience. Every class is
                 built on the Lagree Method — slow, controlled movement that holds your muscles
                 under tension the whole way through, without the impact on your joints. We bring
                 the machines and the coaching — you just show up, whether that&apos;s at one of our
