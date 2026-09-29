@@ -8,6 +8,7 @@ import Instructors from './components/Instructors'
 import Pricing from './components/Pricing'
 import Prep from './components/Prep'
 import Booking from './components/Booking'
+import Newsletter from './components/Newsletter'
 import Footer from './components/Footer'
 
 export default function App() {
@@ -24,6 +25,7 @@ export default function App() {
         <Pricing />
         <Prep />
         <Booking />
+        <Newsletter />
       </main>
       <Footer />
     </>

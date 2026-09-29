@@ -7,3 +7,8 @@ export const SERVICE_AREA = 'Greater Los Angeles'
 // Formspree endpoint (https://formspree.io) — e.g. 'https://formspree.io/f/abcdwxyz'.
 // While this is empty the booking form falls back to opening an email draft.
 export const FORM_ENDPOINT = 'https://formspree.io/f/xwlpwzan'
+
+// MailerLite embedded-form action URL, e.g.
+// 'https://assets.mailerlite.com/jsonp/123456/forms/7890123/subscribe'.
+// While this is empty the newsletter section is hidden entirely.
+export const NEWSLETTER_ACTION = ''
