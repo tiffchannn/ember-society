@@ -38,12 +38,6 @@ const sections = [
     ],
   },
   {
-    title: 'How long we keep it',
-    body: [
-      'Inquiries are kept while we are in conversation with you and for a reasonable period afterwards. Signed waivers and payment records are kept for as long as we may need them for insurance, tax or legal reasons. Mailing list details are kept until you unsubscribe.',
-    ],
-  },
-  {
     title: 'Your choices',
     body: [
       'You can unsubscribe from our emails at any time using the link in any message, and reply STOP to any text message to stop receiving them.',
