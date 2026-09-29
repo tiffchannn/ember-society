@@ -57,12 +57,6 @@ const sections = [
     ],
   },
   {
-    title: 'Children',
-    body: [
-      'Our classes and events are for participants aged 18 and over, and this site is not directed at children. We do not knowingly collect personal information from anyone under 18.',
-    ],
-  },
-  {
     title: 'Changes to this policy',
     body: [
       'We may update this policy as the business changes. The version published here is the one that applies.',
