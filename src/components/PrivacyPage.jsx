@@ -27,7 +27,7 @@ const sections = [
   {
     title: 'Who processes it for us',
     body: [
-      'We use a small number of third-party services to run the business, and your information passes through them: Stripe for payments, Formspree for booking inquiries submitted through this site, Google for our email, and a waiver service for signed waivers. Each holds your information under its own privacy policy.',
+      'We use a small number of third-party services to run the business, and your information passes through them — a payment processor, a service that delivers booking inquiries from this site, our email provider, and a waiver service. Each holds your information under its own privacy policy, and we only use providers we consider reputable.',
       'We may also share information where we are required to by law, or where it is necessary to respond to a medical emergency at an event.',
     ],
   },
