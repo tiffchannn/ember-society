@@ -4,7 +4,7 @@ const pillars = [
   {
     n: '01',
     title: 'Low Impact, High Intensity',
-    body: 'Lagree is slow, controlled and constant — 45 minutes of time under tension that builds strength with no jumping and nothing jarring.',
+    body: 'Lagree is slow, controlled and constant — 30 minutes of time under tension that builds strength with no jumping and nothing jarring.',
   },
   {
     n: '02',

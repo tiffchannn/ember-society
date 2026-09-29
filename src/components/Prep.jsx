@@ -7,7 +7,7 @@ const bring = [
   },
   {
     title: 'Water',
-    body: 'Bring a full bottle. Forty-five minutes of time under tension is thirstier than it looks.',
+    body: 'Bring a full bottle. Thirty minutes of time under tension is thirstier than it looks.',
   },
   {
     title: 'Activewear',
@@ -20,7 +20,7 @@ const bring = [
 ]
 
 const expect = [
-  ['45 minutes', 'A full-body class — slow, low impact, and controlled.'],
+  ['30 minutes', 'A full-body class — slow, low impact, and controlled.'],
   ['Zero experience needed', 'Every move has a modification, and your instructor will guide you.'],
   ['The shake is the point', 'Muscles shaking means you are in the right place. Stay with it.'],
 ]

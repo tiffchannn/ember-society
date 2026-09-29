@@ -10,7 +10,7 @@ const offerings = [
       'Single ticket, no membership',
       'Vendors and brand partners on site',
       'All fitness levels welcome',
-      '45 minutes on the Micro',
+      '30 minutes on the Micro',
     ],
     cta: 'Ask About Upcoming Events',
     featured: false,
