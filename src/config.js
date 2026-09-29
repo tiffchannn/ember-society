@@ -11,4 +11,5 @@ export const FORM_ENDPOINT = 'https://formspree.io/f/xwlpwzan'
 // MailerLite embedded-form action URL, e.g.
 // 'https://assets.mailerlite.com/jsonp/123456/forms/7890123/subscribe'.
 // While this is empty the newsletter section is hidden entirely.
-export const NEWSLETTER_ACTION = ''
+export const NEWSLETTER_ACTION =
+  'https://assets.mailerlite.com/jsonp/2668537/forms/199905265790747827/subscribe'
