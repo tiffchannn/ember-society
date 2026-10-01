@@ -68,10 +68,6 @@ export default function Newsletter() {
                 </button>
               </div>
 
-              <p className="mt-4 text-xs leading-relaxed text-cream/40">
-                Event news only. Unsubscribe any time.
-              </p>
-
               {status === 'error' && (
                 <p className="mt-4 text-sm text-gold">
                   That didn&apos;t go through. Please try again in a moment.
