@@ -154,7 +154,7 @@ export default function WaiverPage() {
         </div>
 
         <div className="mt-14 space-y-4 border-t border-ink/10 pt-10">
-          <p className="text-sm leading-relaxed text-ink/70">
+          <p className="text-sm italic leading-relaxed text-ink/70">
             I have read and fully understand this liability waiver. I understand that I am giving
             up legal rights by signing it, and I sign it freely and voluntarily.
           </p>
