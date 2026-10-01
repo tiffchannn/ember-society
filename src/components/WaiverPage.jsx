@@ -1,8 +1,8 @@
 import Logo from './Logo'
 import { CONTACT_EMAIL } from '../config'
 
-// Version 1.0, 30 September 2026 — as finalised by counsel. Edit only with their sign-off,
-// and bump the version line below when the text changes.
+// Finalised by counsel, effective 30 September 2026. Edit only with their sign-off,
+// and update the effective date below when the text changes.
 const sections = [
   {
     title: 'Assumption of Risk',
@@ -173,7 +173,7 @@ export default function WaiverPage() {
             .
           </p>
           <p className="mt-6 text-xs text-ink/40">
-            Version 1.0 — September 30, 2026 · &copy; {new Date().getFullYear()} Ember Society.
+            Effective September 30, 2026 · &copy; {new Date().getFullYear()} Ember Society.
           </p>
         </div>
       </main>
