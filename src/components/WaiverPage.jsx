@@ -153,12 +153,12 @@ export default function WaiverPage() {
           ))}
         </div>
 
-        <div className="mt-14 rounded-2xl border border-ink/15 bg-ink/5 p-6">
-          <p className="text-sm font-medium leading-relaxed text-ink/80">
-            I HAVE READ AND FULLY UNDERSTAND THIS LIABILITY WAIVER. I UNDERSTAND THAT I AM GIVING
-            UP LEGAL RIGHTS BY SIGNING IT, AND I SIGN IT FREELY AND VOLUNTARILY.
+        <div className="mt-14 space-y-4 border-t border-ink/10 pt-10">
+          <p className="text-sm leading-relaxed text-ink/70">
+            I have read and fully understand this liability waiver. I understand that I am giving
+            up legal rights by signing it, and I sign it freely and voluntarily.
           </p>
-          <p className="mt-4 text-sm leading-relaxed text-ink/60">
+          <p className="text-sm leading-relaxed text-ink/60">
             Participants sign this agreement, along with an emergency contact name and phone
             number, before taking part.
           </p>
