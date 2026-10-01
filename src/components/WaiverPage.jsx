@@ -136,7 +136,7 @@ export default function WaiverPage() {
           {sections.map((section, i) => (
             <section key={section.title}>
               <h2 className="display flex items-baseline gap-4 text-xl">
-                <span className="text-sm text-ember">Clause {i + 1}</span>
+                <span className="text-sm text-ember">{String(i + 1).padStart(2, '0')}</span>
                 {section.title}
               </h2>
               <div className="mt-4 space-y-4 pl-9">
