@@ -69,11 +69,7 @@ export default function Newsletter() {
               </div>
 
               <p className="mt-4 text-xs leading-relaxed text-cream/40">
-                Event news only, and you can unsubscribe any time. See our{' '}
-                <a href="/privacy/" className="text-cream/60 underline underline-offset-4">
-                  privacy policy
-                </a>
-                .
+                Event news only. Unsubscribe any time.
               </p>
 
               {status === 'error' && (
