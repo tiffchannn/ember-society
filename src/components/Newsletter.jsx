@@ -1,25 +1,24 @@
 import { useState } from 'react'
 import Reveal from './Reveal'
-import { NEWSLETTER_ACTION } from '../config'
+import { KIT_FORM_ID } from '../config'
 
 export default function Newsletter() {
   const [email, setEmail] = useState('')
   const [status, setStatus] = useState('idle') // idle | sending | done | error
 
   // Nothing to submit to yet — don't ship a form that goes nowhere.
-  if (!NEWSLETTER_ACTION) return null
+  if (!KIT_FORM_ID) return null
 
   const handleSubmit = async (e) => {
     e.preventDefault()
     setStatus('sending')
     try {
-      const body = new FormData()
-      body.append('fields[email]', email)
-      body.append('ml-submit', '1')
-      body.append('anticsrf', 'true')
-      // MailerLite's embed endpoint is JSONP-only, so the response is opaque:
-      // a delivered request means accepted, and we cannot read further detail.
-      await fetch(NEWSLETTER_ACTION, { method: 'POST', mode: 'no-cors', body })
+      const response = await fetch(`https://app.kit.com/forms/${KIT_FORM_ID}/subscriptions`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({ email_address: email }),
+      })
+      if (!response.ok) throw new Error(`Kit returned ${response.status}`)
       setStatus('done')
       setEmail('')
     } catch {
