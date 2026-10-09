@@ -115,7 +115,7 @@ Still to add, from how you actually run these — speaker and music, cleaning su
 
 ## 10. Check-in
 
-**Nothing automatically links a Stripe ticket buyer to a signed waiver — matching them is manual.** This is the one genuinely fiddly part of the day.
+**Nothing automatically links a Stripe ticket buyer to a signed waiver — matching them is manual.** Do that matching the day before and arrive with one printed list: see [check-in.md](check-in.md) for the full approach and the reconciliation formula.
 
 - [ ] Pull up the Stripe payment list (who paid) and the waiver Sheet (who signed) side by side
 - [ ] Each guest: confirm they paid, confirm a signed waiver exists
