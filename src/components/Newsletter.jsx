@@ -42,8 +42,8 @@ export default function Newsletter() {
 
           {status === 'done' ? (
             <p className="rounded-lg border border-gold/40 bg-cream/5 p-6 text-sm leading-relaxed text-cream/80">
-              You&apos;re on the list. Check your inbox to confirm your email — we&apos;ll see you
-              at the next one.
+              You&apos;re on the list. Check your inbox to confirm your email — and check spam
+              if it&apos;s not there. See you at the next one.
             </p>
           ) : (
             <form onSubmit={handleSubmit}>
