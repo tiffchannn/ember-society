@@ -33,6 +33,14 @@ already in the mindset; a week later they are not.
 
 ## Step 2 — Build one list, the day before
 
+**There is a ready-made spreadsheet for this: [`check-in-template.xlsx`](check-in-template.xlsx).**
+Upload it to Google Drive, right-click it and choose *Open with → Google Sheets*.
+The START HERE tab walks through it. You paste twice and type nothing else —
+the formulas are already in place.
+
+The rest of this section explains what it's doing, in case it ever needs
+changing.
+
 Two sources, one sheet:
 
 - **Stripe** — who paid. Export the payments for this event's payment link; it
