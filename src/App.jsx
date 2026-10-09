@@ -5,6 +5,7 @@ import Story from './components/Story'
 import Experience from './components/Experience'
 import Micro from './components/Micro'
 import Instructors from './components/Instructors'
+import Events from './components/Events'
 import Pricing from './components/Pricing'
 import Prep from './components/Prep'
 import Booking from './components/Booking'
@@ -22,6 +23,7 @@ export default function App() {
         <Experience />
         <Micro />
         <Instructors />
+        <Events />
         <Pricing />
         <Prep />
         <Booking />
